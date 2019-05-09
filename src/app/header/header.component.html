@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" >
+  <span><a mat-button routerLink= "">MyPosts</a></span>
+  <span class="spacer"></span>
+   <ul>
+     <li *ngIf="isAuthenticated"> <a mat-button routerLink="api/posts" routerLinkActive="mat-accent">Add post</a></li>
+     <li *ngIf="!isAuthenticated"> <a mat-button routerLink="signup" routerLinkActive="mat-accent">SignUp</a></li>
+     <li *ngIf="!isAuthenticated"> <a mat-button routerLink="signin" routerLinkActive="mat-accent">SigIn</a></li>
+
+    </ul>
+</mat-toolbar>
