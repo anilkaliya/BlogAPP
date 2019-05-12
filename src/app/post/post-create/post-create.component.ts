@@ -63,6 +63,7 @@ onAddPost(){
     return ;
   }
   console.log(this.mode);
+  console.log(this.form.value.image);
   if(this.mode==="create"){
 this.postService.createPost
 (this.form.value.title,this.form.value.content,this.form.value.image);

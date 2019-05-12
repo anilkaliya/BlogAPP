@@ -16,7 +16,7 @@
   }
   
   .post-image {
-    width: 100%;
+    width: 50%;
   }
   
   .post-image img {
@@ -24,3 +24,11 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
   
+  .image{
+    text-align:center;
+    width:80%;
+    margin: 1rem auto;
+}
+.image img{
+  width:100%;
+}

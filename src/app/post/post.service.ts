@@ -15,9 +15,13 @@ export class PostService {
  private postUpdateListener=new Subject<{posts:Post[]}>();
   constructor(private http:HttpClient,private router:Router) { }
   createPost(title:string,content:string,imagePath:string){
- const  post: Post = {id:null,title: title,content: content,imagePath:imagePath};
+  const postData=new FormData();
+  postData.append("content",content);
+  postData.append("title",title);
+  postData.append("image",imagePath,title);
 
-    this.http.post <{message:string} >('http://localhost:3000/api/posts',post)
+
+    this.http.post <{message:string} >('http://localhost:3000/api/posts',postData)
     .subscribe(responseData=>{
       this.router.navigate(['/']);
     });

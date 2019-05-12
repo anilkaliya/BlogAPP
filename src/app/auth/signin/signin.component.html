@@ -1,12 +1,12 @@
 <mat-card>
   <form [formGroup]="form" (submit)="onSignIn()">
   <mat-form-field>
-  <input matInput placeholder="name" formControlName="name">
+  <input  matInput placeholder="name" formControlName="name">
   
   
   </mat-form-field>
   <mat-form-field>
-    <input matInput placeholder="passsword" formControlName="password">
+    <input type="password" matInput placeholder="passsword" formControlName="password">
     </mat-form-field>
     <button mat-raised-button color="accent" type="submit">SignIn</button>
   

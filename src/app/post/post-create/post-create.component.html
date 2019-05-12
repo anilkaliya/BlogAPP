@@ -1,5 +1,5 @@
 <mat-card>
-<form [formGroup]="form" (submit)="onAddPost()">
+<form [formGroup]="form" (submit)="onAddPost()" enctype="multipart/form-data">
 <mat-form-field>
 <input matInput placeholder="title" formControlName="title">
 
